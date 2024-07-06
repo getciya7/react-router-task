@@ -1,0 +1,75 @@
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link.active {
+  color: #a72868 !important;
+}
+
+.nav-link:hover {
+  color: #a72868;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #a72868;
+  border-radius: 2px;
+  width: 0;
+  transition: width 1s ease;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: auto;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.card-text {
+  color: #a72868;
+  cursor: pointer;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
